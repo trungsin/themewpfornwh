@@ -340,3 +340,10 @@ $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_in
 return $instance;
 }
 }
+// Add to functions.php
+function my_custom_alm_before_button() {
+   if(is_page('custom-loader')){
+      return '<div id="custom-alm-loader"></div>';
+   }
+}
+add_filter( 'alm_before_button', 'my_custom_alm_before_button' );
