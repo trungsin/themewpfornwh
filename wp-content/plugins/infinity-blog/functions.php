@@ -133,7 +133,10 @@ function infinity_blog_content_width()
 }
 
 add_action('after_setup_theme', 'infinity_blog_content_width', 0);
-
+add_theme_support( 'infinite-scroll', array(
+ 'container' => 'content',
+ 'footer' => 'page',
+) );
 /**
  * Enqueue scripts and styles.
  */
