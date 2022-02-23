@@ -627,3 +627,9 @@ function alm_sticky_post__not_in( $ids = '', $not_in = '' ) {
 	}
 	return $ids;
 }
+function my_custom_alm_before_button() {
+   if(is_page('custom-loader')){
+      return '<div id="custom-alm-loader"></div>';
+   }
+}
+add_filter( 'alm_before_button', 'my_custom_alm_before_button' );
