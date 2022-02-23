@@ -2598,6 +2598,9 @@ hr.indented {
   margin-top: 10px; }
 
 .admin.ajax-load-more .ajax-load-more-wrap {
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-gap:10px;
   position: relative;
   top: 10px;
   padding: 20px;
