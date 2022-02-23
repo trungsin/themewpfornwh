@@ -614,22 +614,3 @@ function alm_convert_dashes_to_underscore( $string = '' ) {
  * @return array The Post IDs.
  * @since 3.7
  */
-function alm_sticky_post__not_in( $ids = '', $not_in = '' ) {
-
-	if ( ! empty( $not_in ) ) {
-		$new_array = array();
-		foreach ( $ids as $id ) {
-			if ( ! in_array( $id, $not_in, true ) ) {
-				array_push( $new_array, $id );
-			}
-		}
-		$ids = $new_array;
-	}
-	return $ids;
-}
-function my_custom_alm_before_button() {
-   if(is_page('custom-loader')){
-      return '<div id="custom-alm-loader"></div>';
-   }
-}
-add_filter( 'alm_before_button', 'my_custom_alm_before_button' );
