@@ -269,7 +269,7 @@ if ( ! class_exists( 'ALM_SHORTCODE' ) ) :
 			// Inline Core CSS.
 			$inline_css = '';
 			if ( ! is_admin() && alm_do_inline_css( '_alm_inline_css' ) && ! alm_css_disabled( '_alm_disable_css' ) && self::$counter === 1 ) {
-				$file       = ALM_PATH . '/core/dist/css/' . ALM_SLUG . '.min.css'; // Core Ajax Load More
+				$file       = ALM_PATH . '/core/dist/css/' . ALM_SLUG . '.css'; // Core Ajax Load More
 				$inline_css = ALM_ENQUEUE::alm_inline_css( ALM_SLUG, $file, ALM_URL );
 			}
 
