@@ -61,12 +61,12 @@
                     <div class="site-info text-center">
                         <h4 class="site-copyright secondary-textcolor secondary-font">
                             <?php
-                            $infinity_blog_copyright_text = wp_kses_post(infinity_blog_get_option('copyright_text'));
-                            if (!empty($infinity_blog_copyright_text)) {
-                                echo wp_kses_post(infinity_blog_get_option('copyright_text'));
-                            }
+                            // $infinity_blog_copyright_text = wp_kses_post(infinity_blog_get_option('copyright_text'));
+                            // if (!empty($infinity_blog_copyright_text)) {
+                            //     echo wp_kses_post(infinity_blog_get_option('copyright_text'));
+                            // }
                             ?>
-                            <?php printf(esc_html__('Theme: %1$s by %2$s', 'infinity-blog'), 'Infinity Blog', '<a href="http://themeinwp.com/" target = "_blank" rel="designer">Themeinwp </a>');?>
+                            <?php echo "©2022 New Way Hub. All rights reserved. <a href='https://blog.magicexhalation.com/magic-exhalation-terms-of-use/'>Privacy Policy</a>";?>
                         </h4>
                     </div>
                 </div>
