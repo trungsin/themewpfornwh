@@ -1409,7 +1409,7 @@ body .inner-banner {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 110px 0;
+    padding: 10px 0;
     position: relative;
 }
 body .inner-banner-img {
@@ -2534,7 +2534,7 @@ body .widget.infinity_blog_popular_post_widget ul li {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-    background: #272727;
+    background: #F35029;
     color: #fff;
 }
 .site-footer a {
@@ -3300,3 +3300,18 @@ body .mfp-iframe-holder .mfp-close {
 .widget_text a:not(.more-link):not(.button) {
     text-decoration: underline;
 }
+#custom-alm-loader{
+   opacity: 0;
+   display: none;
+   width: 100%;
+   padding: 50px;
+   margin: 0 0 20px;
+   background: #fff;
+   border: 2px dashed #ccc;
+   background: url("img/ajax-loader.gif") no-repeat center center;
+   transition: all 0.1s ease;
+}
+   .alm-loading #custom-alm-loader{
+      display: block;
+      opacity: 1;
+   }
