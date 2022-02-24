@@ -350,7 +350,7 @@
         grid-template-columns:repeat(2, 1fr);  
         }
       }
-      @media screen and (min-width: 480px) {
+     /* @media screen and (min-width: 480px) {
         .alm-listing .alm-reveal > li.alm-item,
         .alm-listing .alm-paging-content > li.alm-item,
         .alm-listing > li.alm-item {
@@ -403,7 +403,7 @@
     .alm-listing .alm-reveal > li.no-img,
     .alm-listing .alm-paging-content > li.no-img,
     .alm-listing > li.no-img {
-      padding: 0; }
+      padding: 0; }*/
   .alm-listing.products li.product {
     padding-left: inherit; }
     .alm-listing.products li.product img {
