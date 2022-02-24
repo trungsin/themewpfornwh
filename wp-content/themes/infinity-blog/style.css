@@ -1409,7 +1409,7 @@ body .inner-banner {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 110px 0;
+    padding: 10px 0;
     position: relative;
 }
 body .inner-banner-img {
@@ -2534,7 +2534,7 @@ body .widget.infinity_blog_popular_post_widget ul li {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-    background: #272727;
+    background: #F35029;
     color: #fff;
 }
 .site-footer a {
