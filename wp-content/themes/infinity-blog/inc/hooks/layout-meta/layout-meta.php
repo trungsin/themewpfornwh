@@ -87,15 +87,16 @@ if (!function_exists('infinity_blog_render_theme_settings_metabox')) :
                          <div class="infinity-opt-wrap infinity-opt-wrap-alt">
                             <label><?php esc_html_e('Single Page/Post Layout', 'infinity-blog'); ?></label>
                             <select name="infinity-blog-meta-select-layout" id="infinity-blog-meta-select-layout">
+                                <option value="no-sidebar" <?php selected('no-sidebar', $page_layout); ?>>
+                                    <?php esc_html_e('No Sidebar', 'infinity-blog') ?>
+                                </option>
                                 <option value="right-sidebar" <?php selected('right-sidebar', $page_layout); ?>>
                                     <?php esc_html_e('Content - Primary Sidebar', 'infinity-blog') ?>
                                 </option>
                                 <option value="left-sidebar" <?php selected('left-sidebar', $page_layout); ?>>
                                     <?php esc_html_e('Primary Sidebar - Content', 'infinity-blog') ?>
                                 </option>
-                                <option value="no-sidebar" <?php selected('no-sidebar', $page_layout); ?>>
-                                    <?php esc_html_e('No Sidebar', 'infinity-blog') ?>
-                                </option>
+                                
                             </select>
                         </div>
 
