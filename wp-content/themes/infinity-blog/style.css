@@ -3391,5 +3391,9 @@ body .mfp-iframe-holder .mfp-close {
     width: 100%;
 }
 }
+.header-single .entry-title {
+    color: #b81226;
+    font-family: "black_jackregular",Georgia,serif;
+}
 
 
