@@ -1223,6 +1223,31 @@ h6.primary-bgcolor,
 .primary-bgcolor a:focus {
     color: #d72828;
 }
+@media only screen and (max-width: 767px) {
+    .primary-bgcolor {
+        background-color: #fff;
+        color: #000;
+    }
+    .primary-bgcolor a,
+    h1.primary-bgcolor,
+    h2.primary-bgcolor,
+    h3.primary-bgcolor,
+    h4.primary-bgcolor,
+    h5.primary-bgcolor,
+    h6.primary-bgcolor,
+    .primary-bgcolor h1,
+    .primary-bgcolor h2,
+    .primary-bgcolor h3,
+    .primary-bgcolor h4,
+    .primary-bgcolor h5,
+    .primary-bgcolor h6 {
+        color: #000;
+    }
+    .primary-bgcolor a:hover,
+    .primary-bgcolor a:focus {
+        color: #d72828;
+    }
+}
 .primary-textcolor {
     color: #000;
 }
