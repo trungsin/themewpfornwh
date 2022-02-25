@@ -26,11 +26,15 @@
                         <?php infinity_blog_entry_category(); ?>
                     </span>
                 </div>-->
-               
+                <?php if ( wp_is_mobile() ) { ?>
+                <h2 class="entry-title" style="color: #e92626;">
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                </h2>
+            <?php } else { ?>
                 <h2 class="entry-title">
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                 </h2>
-        
+            <?php } ?>
                 <div class="entry-meta text-uppercase">
                     <?php infinity_blog_posted_details(); ?>
                 </div><!-- .entry-meta -->
