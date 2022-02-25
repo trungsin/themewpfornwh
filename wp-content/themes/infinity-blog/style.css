@@ -3315,3 +3315,10 @@ body .mfp-iframe-holder .mfp-close {
       display: block;
       opacity: 1;
    }
+.readmorebtn{
+    color: #666;
+    display: block;
+    font-weight: 700;
+    margin-top: 10px;
+    width: 100px;
+}
