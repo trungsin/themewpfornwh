@@ -57,11 +57,11 @@ if( !class_exists( 'Booster_Extension_Class' ) ){
 		<?php infinity_blog_entry_category();?>
 		</footer><!-- .entry-footer -->
 		<?php }?>
-	    <?php if (has_tag()) {?>
+	   <!-- <?php if (has_tag()) {?>
 		<div class="post-tags alternative-bgcolor">
 		<?php infinity_blog_entry_tags();?>
 		</div>
-		<?php }?>
+		<?php }?>-->
 	</div>
 	<?php }?>
 </article><!-- #post-## -->
