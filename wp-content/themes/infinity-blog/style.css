@@ -1231,17 +1231,18 @@ h6.primary-bgcolor,
     .primary-bgcolor a,
     h1.primary-bgcolor,
     h2.primary-bgcolor,
-    h3.primary-bgcolor,
+   /* h3.primary-bgcolor,
     h4.primary-bgcolor,
     h5.primary-bgcolor,
-    h6.primary-bgcolor,
+    h6.primary-bgcolor,*/
     .primary-bgcolor h1,
     .primary-bgcolor h2,
-    .primary-bgcolor h3,
+    /*.primary-bgcolor h3,
     .primary-bgcolor h4,
     .primary-bgcolor h5,
-    .primary-bgcolor h6 {
-        color: #000;
+    .primary-bgcolor h6 */
+    {
+        color: #ef2929;
     }
     .primary-bgcolor a:hover,
     .primary-bgcolor a:focus {
