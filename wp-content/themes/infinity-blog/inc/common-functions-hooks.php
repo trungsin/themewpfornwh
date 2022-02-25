@@ -271,8 +271,14 @@ function infinity_blog_excerpt_more($more) {
 	$output         = $more;
 	$read_more_text = esc_html(infinity_blog_get_option('read_more_button_text'));
 	if (!empty($read_more_text)) {
-		$output = ' <a href="'.esc_url(get_permalink()).'" class="btn-link">'.esc_html($read_more_text).'<i class="ion-ios-arrow-right"></i>'.'</a>';
-		$output = apply_filters('infinity_blog_filter_read_more_link', $output);
+        if ( wp_is_mobile() ) {
+            $output = ' <a href="'.esc_url(get_permalink()).'" class="">'.esc_html($read_more_text).'<i class="ion-ios-arrow-right"></i>'.'</a>';
+            $output = apply_filters('infinity_blog_filter_read_more_link', $output);
+        } else {
+            $output = ' <a href="'.esc_url(get_permalink()).'" class="btn-link">'.esc_html($read_more_text).'<i class="ion-ios-arrow-right"></i>'.'</a>';
+            $output = apply_filters('infinity_blog_filter_read_more_link', $output);
+        }
+		
 	}
 	return $output;
 
