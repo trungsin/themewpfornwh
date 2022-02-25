@@ -69,23 +69,7 @@
                 } else {
                     $values = esc_attr($image_values);
                 }
-                if ('no-image' != $values) {
-                if ('left' == $values) {
-                echo "<div class='image-left'>"; ?>
-                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                    <?php the_post_thumbnail('full');
-                    } elseif ('right' == $values) {
-                    echo "<div class='image-right'>"; ?>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                        <?php the_post_thumbnail('full');
-                        } else {
-                        echo "<div class='image-full'>"; ?>
-                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-                            <?php the_post_thumbnail('full');
-                            }
-                            echo "</a></div>";/*div end */
-                            }
-                            ?>
+       
                             <div class="twp-text-align">
                                 <?php the_content(); ?>
                             </div>
