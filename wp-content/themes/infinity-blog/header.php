@@ -44,6 +44,42 @@
     <a class="skip-link screen-reader-text" href="#main"><?php esc_html_e('Skip to content', 'infinity-blog'); ?></a>
 
     <header id="masthead" class="site-header" role="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="site-branding">
+                        <div class="twp-site-branding">
+                            <div class="branding-center">
+                                <?php
+                                infinity_blog_the_custom_logo();
+                                if (is_front_page() && is_home()) : ?>
+                                    <span class="site-title primary-font">
+                                    <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                                        <?php bloginfo('name'); ?>
+                                    </a>
+                                </span>
+                                <?php else : ?>
+                                    <span class="site-title primary-font">
+                                    <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                                        <?php bloginfo('name'); ?>
+                                    </a>
+                                </span>
+                                <?php
+                                endif;
+                                $description = get_bloginfo('description', 'display');
+                                if ($description || is_customize_preview()) : ?>
+                                    <p class="site-description">
+                                        <?php echo esc_html($description); ?>
+                                    </p>
+                                <?php
+                                endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .site-branding -->
+                </div>
+            </div>
+        </div>
         <div id="nav-affix" class="top-header header--fixed primary-bgcolor">
             <div class="container">
                 <nav class="main-navigation" role="navigation">
@@ -85,42 +121,7 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="site-branding">
-                        <div class="twp-site-branding">
-                            <div class="branding-center">
-                                <?php
-                                infinity_blog_the_custom_logo();
-                                if (is_front_page() && is_home()) : ?>
-                                    <span class="site-title primary-font">
-                                    <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                                        <?php bloginfo('name'); ?>
-                                    </a>
-                                </span>
-                                <?php else : ?>
-                                    <span class="site-title primary-font">
-                                    <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                                        <?php bloginfo('name'); ?>
-                                    </a>
-                                </span>
-                                <?php
-                                endif;
-                                $description = get_bloginfo('description', 'display');
-                                if ($description || is_customize_preview()) : ?>
-                                    <p class="site-description">
-                                        <?php echo esc_html($description); ?>
-                                    </p>
-                                <?php
-                                endif; ?>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- .site-branding -->
-                </div>
-            </div>
-        </div>
+        
 
     </header>
     <!-- #masthead -->
