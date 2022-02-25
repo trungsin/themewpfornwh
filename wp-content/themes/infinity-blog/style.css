@@ -1231,16 +1231,16 @@ h6.primary-bgcolor,
     .primary-bgcolor a,
     h1.primary-bgcolor,
     h2.primary-bgcolor,
-   /* h3.primary-bgcolor,
+    h3.primary-bgcolor,
     h4.primary-bgcolor,
     h5.primary-bgcolor,
-    h6.primary-bgcolor,*/
+    h6.primary-bgcolor,
     .primary-bgcolor h1,
     .primary-bgcolor h2,
-    /*.primary-bgcolor h3,
+    .primary-bgcolor h3,
     .primary-bgcolor h4,
     .primary-bgcolor h5,
-    .primary-bgcolor h6 */
+    .primary-bgcolor h6 
     {
         color: #ef2929;
     }
@@ -3360,3 +3360,4 @@ body .mfp-iframe-holder .mfp-close {
     font-style: italic;
     transition: all .3s ease-in-out;
 }
+entry-title
