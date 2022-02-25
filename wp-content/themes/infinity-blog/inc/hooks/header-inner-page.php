@@ -14,11 +14,10 @@ if (!function_exists('infinity_blog_single_page_title')) :
                     $global_banner_image = $banner_image_array[0];
                 }
             }
-        }the_post_thumbnail('full');
+        }
         ?>
         <div class="hero">
-            
-                <img class="hero-img" src="https://giftsblog.wpengine.com/wp-content/uploads/2018/03/bloody-mary-bar-drinks-hero.jpg" alt="">
+             <?php  the_post_thumbnail('full',['class' => 'hero-img', 'title' => 'Feature image']); ?>
                 <header class="header-single container has-img">
                         <div class="container">
                 <h1 class="entry-title">Bloody Mary Bar Tips and Recipes</h1>
