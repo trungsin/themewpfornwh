@@ -2845,6 +2845,8 @@ nav.navigation.pagination {
     }
     .site-content .twp-infinity-article .entry-content .twp-content-image a {
         margin: 0 auto;
+        border: 0;
+        padding:  0;
     }
 }
 .admin-bar .top-header {
