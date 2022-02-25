@@ -39,7 +39,7 @@ if (!function_exists('infinity_blog_single_page_title')) :
             </div>
             </header>
         </div>
-  
+
 
         <?php
     }

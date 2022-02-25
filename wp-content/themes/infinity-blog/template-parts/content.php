@@ -19,7 +19,7 @@
     }?>
     <div class="twp-article-wrapper <?php echo esc_attr($div_class); ?>">
         <?php if (!is_single()) { ?>
-            <div class="twp-infinity-article primary-bgcolor">
+            <div class="twp-infinity-article primary-bgcolor" >
             <header class="article-header">
               <!--  <div class="post-category secondary-font">
                     <span class="meta-span">
@@ -69,7 +69,23 @@
                 } else {
                     $values = esc_attr($image_values);
                 }
-       
+                if ('no-image' != $values) {
+                if ('left' == $values) {
+                echo "<div class='image-left'>"; ?>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                    <?php the_post_thumbnail('full');
+                    } elseif ('right' == $values) {
+                    echo "<div class='image-right'>"; ?>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                        <?php the_post_thumbnail('full');
+                        } else {
+                        echo "<div class='image-full'>"; ?>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                            <?php the_post_thumbnail('full');
+                            }
+                            echo "</a></div>";/*div end */
+                            }
+                            ?>
                             <div class="twp-text-align">
                                 <?php the_content(); ?>
                             </div>
