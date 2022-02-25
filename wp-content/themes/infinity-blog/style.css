@@ -3376,3 +3376,20 @@ body .mfp-iframe-holder .mfp-close {
     padding-top: 15px;
     padding-bottom: 20px;
 }
+@media (min-width: 992px){
+.header-single .container {
+    padding-right: 25px;
+    padding-left: 25px;
+}    
+@media (min-width: 768px) {
+.header-single.has-img {
+    bottom: 0;
+    position: absolute;
+}
+.header-single {
+    background: rgba(0,0,0,0.56);
+    width: 100%;
+}
+}
+
+
