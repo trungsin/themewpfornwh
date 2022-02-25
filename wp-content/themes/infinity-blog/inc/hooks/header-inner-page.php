@@ -12,17 +12,30 @@ if (!function_exists('infinity_blog_single_page_title')) :
                 if ($banner_image_single_post) {
                     $banner_image_array = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'infinity-blog-header-image');
                     $global_banner_image = $banner_image_array[0];
+                    $print
                 }
             }
         }
         ?>
-
+        <div class="hero">
+            
+                <img class="hero-img" src="https://giftsblog.wpengine.com/wp-content/uploads/2018/03/bloody-mary-bar-drinks-hero.jpg" alt="">
+                <header class="header-single container has-img">
+                        <div class="container">
+                <h1 class="entry-title">Bloody Mary Bar Tips and Recipes</h1>
+                <div class="meta right">
+    <p class="last-updated">Last Updated: <time class="published" datetime="2019-08-09T12:35:05-07:00">August 9, 2019</time></p>
+    </div>
+            </div>
+            </header>
+        </div>
         <div class="wrapper page-inner-title inner-banner primary-bgcolor data-bg"
              data-background="<?php echo esc_url($global_banner_image); ?>">
             <header class="entry-header">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10">
+                            <img src="">
                             <?php if (is_singular()) { ?>
                                 <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
                                 <div class="inner-meta-info">

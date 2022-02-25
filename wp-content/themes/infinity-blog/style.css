@@ -3361,4 +3361,18 @@ body .mfp-iframe-holder .mfp-close {
     font-style: italic;
     transition: all .3s ease-in-out;
 }
-entry-title
+.hero {
+    margin-bottom: 30px;
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.hero .hero-img {
+    height: auto;
+    width: 100%;
+}
+.header-single {
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
