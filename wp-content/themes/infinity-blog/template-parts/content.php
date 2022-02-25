@@ -21,11 +21,11 @@
         <?php if (!is_single()) { ?>
             <div class="twp-infinity-article primary-bgcolor">
             <header class="article-header">
-                <div class="post-category secondary-font">
+              <!--  <div class="post-category secondary-font">
                     <span class="meta-span">
                         <?php infinity_blog_entry_category(); ?>
                     </span>
-                </div>
+                </div>-->
                 <h2 class="entry-title">
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                 </h2>
