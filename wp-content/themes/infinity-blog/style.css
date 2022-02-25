@@ -3320,6 +3320,12 @@ body .mfp-iframe-holder .mfp-close {
     font-weight: 700;
     margin-top: 10px;
 }
+.post-meta {
+    font-family: "Proxima N W01 Smbd";
+    color: #333;
+    font-style: italic;
+    transition: all .3s ease-in-out;
+}
 .post-meta a {
     font-family: "Proxima N W01 Smbd";
     color: #333;
