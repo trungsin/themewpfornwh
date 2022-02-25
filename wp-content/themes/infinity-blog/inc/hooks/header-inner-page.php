@@ -12,7 +12,6 @@ if (!function_exists('infinity_blog_single_page_title')) :
                 if ($banner_image_single_post) {
                     $banner_image_array = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'infinity-blog-header-image');
                     $global_banner_image = $banner_image_array[0];
-                    $print
                 }
             }
         }
