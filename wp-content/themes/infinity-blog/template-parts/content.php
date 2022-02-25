@@ -19,17 +19,22 @@
     }?>
     <div class="twp-article-wrapper <?php echo esc_attr($div_class); ?>">
         <?php if (!is_single()) { ?>
-            <div class="twp-infinity-article primary-bgcolor">
+            <div class="twp-infinity-article primary-bgcolor" <?php if ( wp_is_mobile() ) echo 'style="background-color: #fcf8e3;"'; ?>>
             <header class="article-header">
               <!--  <div class="post-category secondary-font">
                     <span class="meta-span">
                         <?php infinity_blog_entry_category(); ?>
                     </span>
                 </div>-->
+                <?php if ( wp_is_mobile() ) { ?>
+                <h2 class="entry-title" style="color: #e92626;">
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                </h2>
+            <?php } else { ?>
                 <h2 class="entry-title">
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                 </h2>
-
+            <?php } ?>
                 <div class="entry-meta text-uppercase">
                     <?php infinity_blog_posted_details(); ?>
                 </div><!-- .entry-meta -->
