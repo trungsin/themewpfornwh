@@ -14,7 +14,7 @@ if (!function_exists('infinity_blog_single_page_title')) :
                     $global_banner_image = $banner_image_array[0];
                 }
             }
-        }
+        }the_post_thumbnail('full');
         ?>
         <div class="hero">
             
@@ -28,7 +28,7 @@ if (!function_exists('infinity_blog_single_page_title')) :
             </div>
             </header>
         </div>
-      <!--  <div class="wrapper page-inner-title inner-banner primary-bgcolor data-bg"
+  <div class="wrapper page-inner-title inner-banner primary-bgcolor data-bg"
              data-background="<?php echo esc_url($global_banner_image); ?>">
             <header class="entry-header">
                 <div class="container">
@@ -60,7 +60,7 @@ if (!function_exists('infinity_blog_single_page_title')) :
             </header><!-- .entry-header -->
             <div class="inner-header-overlay"></div>
         </div>
--->
+
         <?php
     }
 endif;
