@@ -3316,9 +3316,13 @@ body .mfp-iframe-holder .mfp-close {
       opacity: 1;
    }
 .readmorebtn{
-    color: #666;
     display: block;
     font-weight: 700;
     margin-top: 10px;
-    width: 100px;
+}
+.post-meta a {
+    font-family: "Proxima N W01 Smbd";
+    color: #333;
+    font-style: italic;
+    transition: all .3s ease-in-out;
 }
