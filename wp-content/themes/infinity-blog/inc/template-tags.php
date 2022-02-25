@@ -31,26 +31,46 @@ if (!function_exists('infinity_blog_posted_details')) :
         $month = get_the_date('m');
         $day = get_the_date('d');
         $link = get_day_link($year, $month, $day);
+        if ( wp_is_mobile() ) {
+            $posted_on = sprintf(
+                esc_html__( 'Posted On %s', 'infinity-blog' ),
+                '<a href="' . esc_url( $link ) . '" rel="bookmark">' . $time_string . '</a>'
+            );
 
-        $posted_on = sprintf(
-            esc_html__( 'Posted On %s', 'infinity-blog' ),
-            '<a href="' . esc_url( $link ) . '" rel="bookmark">' . $time_string . '</a>'
-        );
+            $byline = sprintf(
+                esc_html__( 'By %s', 'infinity-blog' ),
+                '<a class="url" href="' . esc_url(get_author_posts_url($author_id)) . '">' . esc_html(get_the_author_meta('display_name', $author_id)) . '</a>'
+            );
 
-        $byline = sprintf(
-            esc_html__( 'By %s', 'infinity-blog' ),
-            '<a class="url" href="' . esc_url(get_author_posts_url($author_id)) . '">' . esc_html(get_the_author_meta('display_name', $author_id)) . '</a>'
-        );
-
-        echo '<span class="posted-on secondary-font">' . $posted_on . '</span><span class="author secondary-font"> ' . $byline . '</span>'; // WPCS: XSS OK.
+            echo '<span class="post-meta">' . $posted_on . '</span><span class="post-meta"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
 
-        if (!is_single() && !post_password_required() && (comments_open() || get_comments_number())) {
-            echo '<span class="comments-link secondary-font">';
-            comments_popup_link(esc_html__('comment', 'infinity-blog'), esc_html__('1 Comment', 'infinity-blog'), esc_html__('% Comments', 'infinity-blog'));
-            echo '</span>';
+            if (!is_single() && !post_password_required() && (comments_open() || get_comments_number())) {
+                echo '<span class="post-meta">';
+                comments_popup_link(esc_html__('comment', 'infinity-blog'), esc_html__('1 Comment', 'infinity-blog'), esc_html__('% Comments', 'infinity-blog'));
+                echo '</span>';
+            }
+        } else {
+            $posted_on = sprintf(
+                esc_html__( 'Posted On %s', 'infinity-blog' ),
+                '<a href="' . esc_url( $link ) . '" rel="bookmark">' . $time_string . '</a>'
+            );
+
+            $byline = sprintf(
+                esc_html__( 'By %s', 'infinity-blog' ),
+                '<a class="url" href="' . esc_url(get_author_posts_url($author_id)) . '">' . esc_html(get_the_author_meta('display_name', $author_id)) . '</a>'
+            );
+
+            echo '<span class="posted-on secondary-font">' . $posted_on . '</span><span class="author secondary-font"> ' . $byline . '</span>'; // WPCS: XSS OK.
+
+
+            if (!is_single() && !post_password_required() && (comments_open() || get_comments_number())) {
+                echo '<span class="comments-link secondary-font">';
+                comments_popup_link(esc_html__('comment', 'infinity-blog'), esc_html__('1 Comment', 'infinity-blog'), esc_html__('% Comments', 'infinity-blog'));
+                echo '</span>';
+            }
+
         }
-
         edit_post_link(
             sprintf(
             /* translators: %s: Name of current post */
