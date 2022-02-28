@@ -15,6 +15,7 @@
 get_header(); ?>
 
     <div id="primary" class="content-area">
+        <?php echo do_shortcode('[frontpage_news widget="19" name="dgdfgdfgdf"]'); ?>
         <main id="main" class="site-main" role="main">
 
             <?php
