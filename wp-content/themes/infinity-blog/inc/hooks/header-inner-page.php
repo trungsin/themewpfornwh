@@ -34,7 +34,7 @@ if (!function_exists('infinity_blog_single_page_title')) :
                                 <h1 class="entry-title"><?php printf(esc_html__('Search Results for: %s', 'infinity-blog'), '<span>' . get_search_query() . '</span>'); ?></h1>
                             <?php } else { } ?>
                 <div class="meta right">
-    <p class="last-updated">Last Updated: <time class="published" datetime="2019-08-09T12:35:05-07:00">August 9, 2019</time></p>
+<!--    <p class="last-updated">Last Updated: <time class="published" datetime="2019-08-09T12:35:05-07:00">August 9, 2019</time></p>-->
     </div>
             </div>
             </header>
