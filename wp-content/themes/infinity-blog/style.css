@@ -3364,6 +3364,7 @@ body .mfp-iframe-holder .mfp-close {
 .hero {
     margin-bottom: 30px;
     max-height: 500px;
+    overflow: hidden;
     position: relative;
 }
 .hero .hero-img {
