@@ -3382,14 +3382,17 @@ body .mfp-iframe-holder .mfp-close {
     padding-left: 25px;
 }    
 @media (min-width: 768px) {
-.header-single.has-img {
-    bottom: 0;
-    position: absolute;
-}
-.header-single {
-    background: rgba(0,0,0,0.56);
-    width: 100%;
-}
+    .header-single.has-img {
+        bottom: 0;
+        position: absolute;
+    }
+    .header-single {
+        background: rgba(0,0,0,0.56);
+        width: 100%;
+    }
+    .inner-meta-info {
+        color: #fcf8e3;
+    }
 }
 .header-single .entry-title {
     color: #b81226;
