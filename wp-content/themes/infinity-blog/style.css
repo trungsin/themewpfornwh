@@ -392,7 +392,7 @@ input[type="submit"] {
     -webkit-border-radius: 3px;
 }
 .scroll-up, body .nav-links .nav-previous, body .nav-links .nav-next {
-    background: #659DBD;
+    background: #EAE7DC;
     color: #fff;
 }
 button, input[type="button"], input[type="reset"], input[type="submit"] {
@@ -560,7 +560,7 @@ a:active {
     width: 100%;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 9000;
 }
 .site-branding {
     margin: 0 auto;
@@ -1201,7 +1201,7 @@ a:active {
 ##color and font
 --------------------------------------------------------------*/
 .primary-bgcolor {
-    background-color: #659DBD;
+    background-color: #EAE7DC;
     color: #ffffff;
 }
 .primary-bgcolor a,
@@ -1225,7 +1225,7 @@ h6.primary-bgcolor,
 }
 @media only screen and (max-width: 767px) {
     .primary-bgcolor {
-        background-color: #659DBD;
+        background-color: #EAE7DC;
         color: #000;
     }
     .primary-bgcolor a,
@@ -1260,7 +1260,7 @@ h6.primary-bgcolor,
     color: #f9f9fb;
 }
 .alternative-bgcolor {
-    background: #659DBD;
+    background: #EAE7DC;
     color: #fff;
 }
 .alternative-bgcolor a {
@@ -3093,6 +3093,8 @@ input[type="submit"]:focus {
 }
 .admin-bar .nav-affix .top-header {
     top: 32px;
+        z-index: 9999;
+
 }
 @media screen and (max-width: 991px) {
     .nav-affix.mmenu-active .top-header {
