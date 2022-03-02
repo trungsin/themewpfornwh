@@ -1201,7 +1201,7 @@ a:active {
 ##color and font
 --------------------------------------------------------------*/
 .primary-bgcolor {
-    background-color: #000;
+    background-color: #659DBD;
     color: #ffffff;
 }
 .primary-bgcolor a,
@@ -1225,7 +1225,7 @@ h6.primary-bgcolor,
 }
 @media only screen and (max-width: 767px) {
     .primary-bgcolor {
-        background-color: #fff;
+        background-color: #659DBD;
         color: #000;
     }
     .primary-bgcolor a,
