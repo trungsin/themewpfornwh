@@ -407,7 +407,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     margin: 30px auto 0;
     min-width: 240px;
     padding: 14px 30px;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
@@ -3047,7 +3047,7 @@ input[type="submit"]:focus {
     color: #d72828;
 }
 .btn-link {
-    border-color: #d72828;
+    border-color: #333;
 }
 @media only screen and (min-width: 992px) {
     .main-navigation .menu > ul > li:hover > a,
