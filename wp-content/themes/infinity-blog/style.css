@@ -1260,7 +1260,7 @@ h6.primary-bgcolor,
     color: #f9f9fb;
 }
 .alternative-bgcolor {
-    background: #000000;
+    background: #659DBD;
     color: #fff;
 }
 .alternative-bgcolor a {
@@ -3351,20 +3351,19 @@ body .mfp-iframe-holder .mfp-close {
 }
 .post-meta {
     font-family: "Proxima N W01 Smbd";
-    color: #333;
+    color: #fcf8e3;
     font-style: italic;
     transition: all .3s ease-in-out;
 }
 .post-meta a {
     font-family: "Proxima N W01 Smbd";
-    color: #333;
+    color: #fcf8e3;
     font-style: italic;
     transition: all .3s ease-in-out;
 }
 .hero {
     margin-bottom: 30px;
     max-height: 500px;
-    overflow: hidden;
     position: relative;
 }
 .hero .hero-img {
