@@ -1202,7 +1202,7 @@ a:active {
 --------------------------------------------------------------*/
 .primary-bgcolor {
     background-color: #EAE7DC;
-    color: #ffffff;
+    color: #434343;
 }
 .primary-bgcolor a,
 h1.primary-bgcolor,
@@ -1217,7 +1217,7 @@ h6.primary-bgcolor,
 .primary-bgcolor h4,
 .primary-bgcolor h5,
 .primary-bgcolor h6 {
-    color: #ffffff;
+    color: #434343;
 }
 .primary-bgcolor a:hover,
 .primary-bgcolor a:focus {
@@ -1226,7 +1226,7 @@ h6.primary-bgcolor,
 @media only screen and (max-width: 767px) {
     .primary-bgcolor {
         background-color: #EAE7DC;
-        color: #000;
+        color: #434343;
     }
     .primary-bgcolor a,
     h1.primary-bgcolor,
@@ -1261,10 +1261,10 @@ h6.primary-bgcolor,
 }
 .alternative-bgcolor {
     background: #EAE7DC;
-    color: #fff;
+    color: #434343;
 }
 .alternative-bgcolor a {
-    color: #fff;
+    color: #000000;
 }
 .inner-heading,
 .block-text {
