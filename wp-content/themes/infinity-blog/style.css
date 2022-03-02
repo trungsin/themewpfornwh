@@ -392,7 +392,7 @@ input[type="submit"] {
     -webkit-border-radius: 3px;
 }
 .scroll-up, body .nav-links .nav-previous, body .nav-links .nav-next {
-    background: #000;
+    background: #659DBD;
     color: #fff;
 }
 button, input[type="button"], input[type="reset"], input[type="submit"] {
