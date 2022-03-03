@@ -1655,6 +1655,10 @@ span.comments-link {
     width: 50%;
     margin-right: 5%;
 }
+.twp-content-image img{
+    height: 356.8px;
+    max-width: 100%;
+}
 .site-content .twp-infinity-article .entry-content .twp-content-details {
     width: 45%;
 }
