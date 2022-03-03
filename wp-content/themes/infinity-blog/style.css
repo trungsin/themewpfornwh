@@ -1337,7 +1337,7 @@ h6.primary-bgcolor,
 }
 .site-content {
     margin: 0 auto;
-    padding: 45px 0;
+    /*padding: 45px 0;*/
 }
 @media (min-width: 768px) {
     .site-content {
@@ -1656,7 +1656,8 @@ span.comments-link {
     margin-right: 5%;
 }
 .twp-content-image img{
-    height: 356.8px;
+    /*height: 356.8px;*/
+    height: auto;
     max-width: 100%;
 }
 .site-content .twp-infinity-article .entry-content .twp-content-details {
