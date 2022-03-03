@@ -2891,6 +2891,7 @@ nav.navigation.pagination {
 @media screen and (max-width: 600px) {
     .admin-bar .top-header {
         top: 0;
+        z-index: 9999;
     }
     .main-navigation .toggle-menu {
         height: 50px;
